@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Compass 로그인</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <img src="compass_logo.png" alt="Compass Logo">
+            <h1>Compass에 로그인</h1>
+            <form id="loginForm" method="post">
+                <!--{% csrf_token %}-->
+                <input type="text" id="username" name="username" placeholder="사용자 이름" required>
+                <input type="password" id="password" name="password" placeholder="비밀번호" required>
+                <input type="submit" onclick="login()" value="login">
+            </form>
+            <p id="error-message"></p>
+            <a href="signup.html">계정 만들기</a>
+            <div class="separator"></div>
+            <p>비밀번호를 잊으셨나요? <a href="#">비밀번호 재설정</a></p>
+        </div>
+    </div>
+ 
+    <script>
+        function login() {
+            
+        }
+    </script>
+</body>
+</html>

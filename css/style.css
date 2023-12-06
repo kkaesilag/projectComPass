@@ -1,0 +1,445 @@
+@font-face {
+    font-family: pretendard-Medium;
+    src: url(../font/Pretendard-Medium.woff);
+}
+@font-face {
+    font-family: pretendard-Bold;
+    src: url(../font/Pretendard-Bold.woff);
+}
+/*애니메이션 부분*/
+@keyframes scroll_up {
+    from{
+        opacity: 0.2;
+        bottom: -200px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0px;
+    }
+
+}
+
+
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: pretendard-Medium;
+    color: black;
+}
+/*헤더 부분*/
+.container {
+    position: fixed; z-index: 999; left: 0; right: 0;
+    background-color: white;
+}
+header{
+    width: 80%;
+    height: 80px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background: none;
+    border: 2px solid pink;
+    color: darkred;
+    padding: 15px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+header button:hover {
+    background: darkcyan;
+}
+
+
+.logo{
+    font-family: pretendard-medium;
+    font-size: 25px;
+}
+
+.logo span{
+    font-family: pretendard-bold;
+    font-size: 30px;
+}
+
+.nav li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.nav li a:hover{
+    color: darkcyan;
+}
+
+/*바디 부분*/
+
+.main {
+    padding-top: 80px;
+    width: 100%;
+    height: 400vh;
+    background: black;
+}
+
+.write1 {
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 100px;
+
+}
+
+.write1 h2{
+    text-align: left;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.write1 p{
+    color: white;
+}
+
+.ibx {
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.ibx h2 {
+    color: white;
+    font-size: 50px;
+    margin: 0px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.wrap-si {
+    margin-top: 50px;
+    position: absolute;
+    right: 10px;
+}
+
+.infbx{
+    display: flex;
+    justify-content: space-around; /* 각 항목을 동일한 간격으로 배치 */
+    list-style: none; /* 리스트 기본 스타일 제거 */
+    margin-left: 20px;
+    width: 600px;
+    height: 100px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+.ibx li{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stores {
+    margin: 50px 20px;
+}
+
+.phone1 {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    border: 10px solid gray;
+    border-radius: 15px;
+}
+
+.ibx a {    /* 스토어 박스 */
+    background-color: rgb(195, 195, 195);
+    padding: 0px 13px;
+    padding-top: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.infbx li span {
+    margin-top: 5px;
+    color: gray; /* 적절한 색상 지정 */
+    font-weight: bold; /* 필요한 경우 텍스트 굵기 조절 */
+    text-align: center;
+}
+
+.inf2{
+    position: relative;
+    margin: 200px auto 0px;
+    width: 1200px;
+    height: 1000px;
+    animation: scroll_up 2.5s;
+}
+
+.inf2 h2{
+    color: white;
+    font-size: 50px;
+}
+
+.inf2 p{
+    position: absolute;
+    bottom: 80px;
+    right: 18px;
+    font-weight: 600px;
+    font-size: 28px;
+    color: white;
+}
+
+.phone2{
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    border: 10px solid gray;
+    border-radius: 15px;
+    bottom: 100px;
+}
+
+.phone3{
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    border: 10px solid gray;
+    border-radius: 15px;
+    right: 0px;
+    top: 0px;
+}
+
+.write2 {
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.write2 h2{
+    text-align: left;
+    color: white;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.write2 p{
+    color: white;
+}
+
+.wrap_boxes1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+}
+
+.wrap_boxes1 li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: pretendard-bold;
+    font-size: 30px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 30px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 4px 12px rgba(255, 255, 255, 0.08);
+    align-items: center;
+    gap: 8px;
+}
+
+.wrap_boxes1 li p {
+    color: black;
+    font-size: 15px;
+}
+
+/*더 알아보기 란 속성*/
+
+.write3 h2{
+    text-align: left;
+    color: white;
+    margin-bottom: 60px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.write3{
+    width: 60%;
+    margin: auto;
+    max-width: 1050px;
+}
+
+.wrap_boxes2{
+    display: flex;
+    justify-content:space-around;
+}
+
+.wrap_boxes2 li{
+    text-align: center;
+    font-family: pretendard-bold;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 18px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 4px 12px rgba(255, 255, 255, 0.4);
+    align-items: center;
+    justify-content: center;
+    transition: 1.5s;
+}
+
+.wrap_boxes2 li:hover{
+    width: 320px;
+    height: 320px;
+
+}
+
+.wrap_boxes2 li span {
+    font-family: pretendard-bold;
+    color: #d8d8da;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    text-align: center;
+    align-items: center;
+    margin-left: 240px;
+}
+
+/*지원 메뉴*/
+
+.faqmain h2{
+    padding: 200px 0 50px 0;
+    font-size: 50px;
+    background-image: url(../images/cyberspace.jpg);
+    color: white;
+    text-align: center;
+    align-items: center;
+    height: 200px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.search-box {
+    position: relative;
+    width: 600px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 30px;
+    border: 2px solid #aaa;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-input:focus {
+    border-color: #2196F3;
+}
+
+.helpbox{
+    border: gray solid 5px;
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.helpbox li{
+    text-align: center;
+    font-family: pretendard-bold;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 18px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 4px 12px rgba(255, 255, 255, 0.4);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* app1~ 페이지*/
+
+.back_button {
+    position: fixed;
+    top: 100px;
+    left: 50px;
+}
+
+.back_button a{
+    width: 72px;
+    height: 72px;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 68px;
+    color: white;
+
+}
+
+/* About us 페이지*/
+
+.history_bg{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/about_us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.history_bg h2{
+    text-align: center;
+    padding-top: 200px;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+}
+
+.history_about{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+.history_about h3 {
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 700px;
+}
+
+.timeline li {
+    width: 600px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
