@@ -373,7 +373,8 @@ header button:hover {
 }
 
 .helpbox{
-    border: gray solid 5px;
+    background-color: white;
+    border-radius: 20px;
     width: 1200px;
     margin: 0px auto;
     display: flex;
@@ -486,16 +487,22 @@ header button:hover {
 }
 
 .history_about{
-    width: 80%;
+    width: 1200px;
     margin: auto;
     position: relative;
+}
+
+.history_about_text p {
+    margin-top: 20px;
+    font-size: 23px;
+    color: white;
 }
 
 .history_about::before {
     content: "";
     position: absolute;
     left: -39px;
-    top: 125px;
+    top: 138px;
     width: 2px;
     height: 615px;
     background: #ddd;
@@ -503,12 +510,13 @@ header button:hover {
 
 .history_about h2 {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 30px;
 }
 
 .timeline {
     display: flex;
+    flex: 2;
     flex-direction: column;
     justify-content: space-around;
     height: 800px;
@@ -529,6 +537,22 @@ header button:hover {
     background:#252525; border: 2px solid #ffffff;
     box-sizing: border-box
 }
+
+.history_about_wrap {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.history_about_text {
+    flex: 1;
+}
+
+.history_about_text span {
+    font-size: 5rem;
+    color: white;
+}
+
 .vision {
     width: 100%;
     height: 600px;
