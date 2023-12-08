@@ -1,0 +1,118 @@
+@font-face {
+    font-family: pretendard-Medium;
+    src: url(../font/Pretendard-Medium.woff);
+}
+@font-face {
+    font-family: pretendard-Bold;
+    src: url(../font/Pretendard-Bold.woff);
+}
+/*애니메이션 부분*/
+@keyframes scroll_up {
+    from{
+        opacity: 0.2;
+        bottom: -200px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0px;
+    }
+
+}
+@keyframes fadein_up{
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes fadein{
+    from {
+        opacity: 0;     
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: pretendard-Medium;
+    color: white;
+}
+/*헤더 부분*/
+header{
+    width: 80%;
+    height: 80px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background: none;
+    border: 2px solid pink;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+header button:hover {
+    background: darkcyan;
+}
+
+
+.logo{
+    font-family: pretendard-medium;
+    font-size: 25px;
+}
+
+.logo span{
+    font-family: pretendard-bold;
+    font-size: 30px;
+}
+
+.nav li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.nav li a:hover{
+    color: darkcyan;
+}
+
+/*바디 부분*/
+
+body{
+    
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/test1.jpg);
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    height: 600px;
+}
+
+.text_container {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 2.8rem;
+}
