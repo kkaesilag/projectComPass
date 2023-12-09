@@ -291,6 +291,8 @@ header button:hover {
     width: 60%;
     margin: auto;
     max-width: 1050px;
+    padding-bottom: 50px;
+
 }
 
 .wrap_boxes2{
@@ -556,7 +558,7 @@ header button:hover {
 .vision {
     width: 100%;
     height: 600px;
-    background-color: gray;
+    background-color: rgb(119, 119, 119);
     text-align: center;
 }
 .vision_wrap{
@@ -576,7 +578,8 @@ header button:hover {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    border: 2px solid beige;
+    border: 2px dotted beige;
+    border-radius: 30px;
     width: 350px;
     height: 400px;
     padding: 10px;
