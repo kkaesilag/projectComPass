@@ -119,6 +119,8 @@ header button:hover {
 
 .write1 p{
     color: white;
+    font-size: 23px;
+    margin-bottom: 20px;
 }
 
 .ibx {
@@ -212,7 +214,6 @@ header button:hover {
     width: 400px;
     height: 700px;
     position: absolute;
-    border: 10px solid gray;
     border-radius: 15px;
     bottom: 100px;
 }
