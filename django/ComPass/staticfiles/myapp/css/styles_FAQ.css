@@ -1,0 +1,54 @@
+/* styles_FAQ.css 파일에 추가되는 스타일들 */
+
+.faq-container {
+    text-align: left;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 20px; /* h1 밑에 여백 추가 */
+    text-align: center; /* 제목 중앙 정렬 추가 */
+    color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+    font-size: 2em; /* 글자 크기를 크게 조절 (2em은 기본 크기의 2배) */
+  }
+  
+  .question {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff; /* 질문 박스의 배경색을 흰색으로 설정 */
+    border-radius: 8px;
+    cursor: pointer;
+    flex-direction: column;
+    margin-left: 20%; /* 왼쪽 여백 추가 */
+    margin-right: 20%; /* 오른쪽 여백 추가 */
+  }
+  
+  .question p {
+    margin-left: 10px; /* 질문 문구의 왼쪽 여백 추가 */
+    display: inline; /* 질문을 인라인 요소로 변경 */
+  }
+  
+  .answer {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fff; /* 답변 박스의 배경색을 흰색으로 설정 */
+    margin-left: 20px; /* 답변 왼쪽 여백 추가 */
+  }
+  
+  /* Q.과 A.의 문구 강조 스타일 */
+  .question::before{
+    content: 'Q. ';
+    color: #3498db; /* 파란색으로 강조 */
+    margin-right: 5px; /* A.와 답변 사이의 간격 조절 */
+    font-weight: bold;
+    font-size: 1.3em
+  }
+  
+  .answer::before {
+    content: 'A. ';
+    color: #e74c3c; /* 빨간색으로 강조 */
+    margin-right: 5px; /* A.와 답변 사이의 간격 조절 */
+    font-weight: bold;
+    font-size: 1.2em
+  }
+  
