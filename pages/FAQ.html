@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>자주 묻는 질문</title>
+  <link rel="stylesheet" href="../css/styles_FAQ.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><a href="">.com<span>pass</span></a></div>
+      <ul class="nav">
+        <li><a href="">소개</a></li>
+        <li><a href="help.html">지원</a></li>
+        <li><a href="">About Us</a></li>
+        <li><button type="button" onclick="location.href='login.html'">로그인</button></li>
+      </ul>
+    </header>
+  </div>
+
+  <div class="main">
+    <h1>자주 묻는 질문</h1>
+    <div class="faq-container">
+      <!-- 첫 번째 질문 -->
+      <div class="question" onclick="toggleAnswer('answer1')">
+        <p>첫 번째 질문은 어떤 내용인가요?</p>
+        <div class="answer" id="answer1"><p>첫 번째 질문에 대한 답변입니다.</p></div>
+      </div>
+
+      <!-- 두 번째 질문 -->
+      <div class="question" onclick="toggleAnswer('answer2')">
+        <p>두 번째 질문은 어떤 내용인가요?</p>
+        <div class="answer" id="answer2"><p>두 번째 질문에 대한 답변입니다.</p></div>
+      </div>
+
+      <!-- 추가 질문들을 필요에 따라 반복해서 추가할 수 있습니다. -->
+    </div>
+  </div>
+
+  <script src="../js/jscript_FAQ.js"></script>
+</body>
+</html>
