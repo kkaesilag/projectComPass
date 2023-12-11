@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'myapp/css/header.css' %}">
-    <link rel="stylesheet" href="{% static 'myapp/css/app.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/app1.css' %}">
 </head>
 <body>
     <div class="container">
@@ -14,14 +14,14 @@
             <ul class="nav">
                 <li><a href="{% url 'app' %}">앱 소개</a></li>
                 <li><a href="{% url 'help' %}">지원</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="{% url 'aboutus' %}">About Us</a></li>
                 <li><button type="button" onclick="location.href='{% url 'login' %}'">로그인</button></li>
             </ul>
         </header>
     </div>
     <div class="main">
         <div class="back_button">
-            <a href="app.html">←</a>
+            <a href="{% url 'app' %}">←</a>
         </div>
         <div class="introduce_planner">
             <div class="planner_text1">
@@ -36,11 +36,11 @@
                 <p>이어지는 성과는 <span>길게</span></p>
             </div>
             <div class="phone3">
-                <video width="310" height="590" src="{% static 'myapp/video/matching.mp4' %}" muted autoplay loop></video>
+                <video width="310" height="590" src="{% static 'myapp/video/planer.mp4' %}" muted autoplay loop></video>
                 <img src="{% static 'myapp/images/iPhone12_Shadow.png' %}" class="overlay-image1" alt="Overlay Image">
             </div>
             <label class="down_icon">
-                <img src="{% static 'myapp/images/down-arrow.png' %}" width="70" height="70">
+                <img src="{% static 'myapp/images/down-arrow.png' %}" width="70" height="70" alt="이미지 오류">
             </label>
         </div>
         <div class="introduce_ai_video">
@@ -53,8 +53,8 @@
                 <h2>필터 기능으로</h2>
                 <h2>원하는 것만.</h2>
             </div>
-            <img class="ai_img1" src="{% static 'myapp/images/filter.png' %}" width="300" height="300">
-            <img class="right_arrow" src="{% static 'myapp/images/right-drawn-arrow.png' %}" width="200" height="200">
+            <img class="ai_img1" src="{% static 'myapp/images/filter.png' %}" width="300" height="300" alt="이미지 오류">
+            <img class="right_arrow" src="{% static 'myapp/images/right-drawn-arrow.png' %}" width="200" height="200" alt="이미지 오류">
             <div class="phone4">
                 <video width="310" height="590" src="{% static 'myapp/video/video_ai.mp4' %}" muted autoplay loop></video>
                 <img src="{% static 'myapp/images/iPhone12_Shadow.png' %}" class="overlay-image1" alt="Overlay Image">

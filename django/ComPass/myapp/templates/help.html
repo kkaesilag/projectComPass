@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'myapp/css/header.css' %}">
-    <link rel="stylesheet" href="{% static 'myapp/css/app.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/help.css' %}">
 </head>
 <body>
     <div class="container">
@@ -14,7 +14,7 @@
             <ul class="nav">
                 <li><a href="{% url 'app' %}">앱 소개</a></li>
                 <li><a href="{% url 'help' %}">지원</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="{% url 'aboutus' %}">About Us</a></li>
                 <li><button type="button" onclick="location.href='{% url 'login' %}'">로그인</button></li>
             </ul>
         </header>
@@ -27,7 +27,7 @@
             </div>
         </div>
         <ul class="helpbox">
-            <a href="{% url 'faq' %}"><li><img src="{% static 'myapp/images/qa.png' %}" width="100" height="100">FAQ</li></a>
-            <a href="{% url 'request' %}"><li><img src="{% static 'myapp/images/support.png' %}" width="100" height="100">문의하기</li></a>
+            <a href="{% url 'faq' %}"><li><img src="{% static 'myapp/images/qa.png' %}" width="100" height="100" alt="이미지 오류">FAQ</li></a>
+            <a href="{% url 'request' %}"><li><img src="{% static 'myapp/images/support.png' %}" width="100" height="100" alt="이미지 오류">문의하기</li></a>
         </ul>
     </div>

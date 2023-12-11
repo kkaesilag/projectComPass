@@ -22,12 +22,12 @@
                     <h2>내일을 향한 미래</h2>
                     <h2>compass와 함께</h2>
                 </div>
-                <a class="right" href="aboutus.html">
-                    <img src="../images/angle-right.png" width="35" height="35"> <span>더 알아보기</span>
+                <a class="right" href="{% url 'aboutus' %}">
+                    <img src="{% static 'myapp/images/angle-right.png' %}" width="35" height="35" alt="이미지 오류"> <span>더 알아보기</span>
                 </a>
             </div>
             <label class="down_icon">
-                <img src="../images/down-arrow.png" width="70" height="70">
+                <img src="{% static 'myapp/images/down-arrow.png' %}" width="70" height="70" alt="이미지 오류">
             </label>
     </div>
     <div class="cover2">
@@ -36,8 +36,8 @@
                 <h2>컴패스 만의 다양한 </h2>
                 <h2>기능들을 알아보세요.</h2>
             </div>
-            <a class="right" href="app.html">
-                <img src="../images/angle-right.png" width="35" height="35"> <span>더 알아보기</span>
+            <a class="right" href="{% url 'app' %}">
+                <img src="{% static 'myapp/images/angle-right.png' %}" width="35" height="35" alt="이미지 오류"> <span>더 알아보기</span>
             </a>
         </div>
     </div>
@@ -46,9 +46,9 @@
     <div class="row1">
         <div class="logo"><a href="">.com<span>pass</span></a></div>
         <ul class="nav">
-            <li><a href="app.html">앱 소개</a></li>
-            <li><a href="help.html">지원</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="{% url 'app' %}">앱 소개</a></li>
+            <li><a href="{% url 'help' %}">지원</a></li>
+            <li><a href="{% url 'aboutus' %}">About Us</a></li>
         </ul>
     </div>
     <div class="row2">
