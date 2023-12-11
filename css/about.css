@@ -163,7 +163,7 @@
 
 .team li span{
     font-size: 17px;
-    color: #aaa;
+    color: gray;
 }
 
 .team li:nth-child(even) {
