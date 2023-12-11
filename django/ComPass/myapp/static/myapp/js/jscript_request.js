@@ -1,3 +1,5 @@
+
+
 function submitForm(event) {
     event.preventDefault();
   
@@ -7,6 +9,6 @@ function submitForm(event) {
       message: document.getElementById('message').value
     };
   
-    console.log('전송된 데이터:', formData);
-    // 여기에서 추가적인 로직을 작성할 수 있습니다.
+    console.log('���۵� ������:', formData);
   }
+  

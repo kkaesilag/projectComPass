@@ -1,0 +1,138 @@
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(30px);
+    }
+  }
+
+
+.main {
+    padding-top: 80px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+
+.back_button {
+    position: fixed;
+    top: 100px;
+    left: 50px;
+}
+
+.back_button a{
+    width: 72px;
+    height: 72px;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 68px;
+    color: white;
+
+}
+
+.introduce_planner {
+    width: 1000px;
+    height: 700px;
+    padding: 100px;
+    margin: auto;
+    position: relative;
+}
+
+.planner_text1{
+    color: rgb(43, 43, 190);
+    font-size: 30px;
+    animation: fadein_up 1.5s;
+}
+
+h1{
+    color: rgb(43, 43, 190);
+    font-size: 30px;
+}
+h2{
+    color: white;
+    font-size: 50px;
+}
+
+.phone3 {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    border-radius: 30px;
+    animation: fadein_up 2.5s;
+}
+
+.phone3 video {
+    overflow: hidden;
+    border-radius: 41px;
+}
+
+.overlay-image1 {
+    position: absolute;
+    top: -15px;
+    left: -5px;
+    width: 320px; /* 부모 요소에 꽉 차도록 조정 */
+    height: 634px;
+}
+
+.planner_text2{
+    position: absolute;
+    top: 600px;
+    font-weight: 400;
+    animation: fadein 3s;
+}
+
+.planner_text2 p{
+    color: white;
+    font-size: 30px;
+}
+.planner_text2 span{
+    color: white;
+    font-size: 50px;
+}
+.down_icon {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+.introduce_ai_video{
+    width: 1000px;
+    height: 900px;
+    padding: 100px;
+    margin: auto;
+    position: relative;
+}
+.ai_text{
+    position: absolute;
+    right: 400px;
+}
+.phone4 {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    border-radius: 30px;
+}
+.phone4 video {
+    overflow: hidden;
+    border-radius: 41px;
+}
+.ai_img1{
+    position: absolute;
+    right: 220px;
+    bottom: 130px;
+    border-radius: 20px;
+}
+.right_arrow {
+    position: absolute;
+    top:320px;
+    right: 530px;
+}
+.ai_text2 {
+    position: absolute;
+    right: 250px;
+    top: 530px;
+}

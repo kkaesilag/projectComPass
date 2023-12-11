@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/app.css' %}">
 </head>
 <body>
     <div class="container">
-        <header>
+     <header>
             <div class="logo"><a href="{% url 'main' %}">.com<span>pass</span></a></div>
             <ul class="nav">
-                <li><a href="">앱 소개</a></li>
+                <li><a href="{% url 'app' %}">앱 소개</a></li>
                 <li><a href="{% url 'help' %}">지원</a></li>
                 <li><a href="">About Us</a></li>
                 <li><button type="button" onclick="location.href='{% url 'login' %}'">로그인</button></li>
@@ -20,24 +21,44 @@
     </div>
     <div class="main">
         <div class="back_button">
-            <a href="{% url 'app' %}">←</a>
+            <a href="app.html">←</a>
         </div>
         <div class="introduce_planner">
             <div class="planner_text1">
                 <h1>플래너</h1>
-                <h2>여러 은행의 조건을</h2>
-                <h2>1분 만에</h2>
-                <h2>확인해보세요.</h2>
+                <h2>가장 효율적인 계획을</h2>
+                <h2>빠르고 간단하게</h2>
+                <h2>계획해보세요.</h2>
             </div>
             <div class="planner_text2">
-                <p>게임 시간은 <span>단축</span></p>
-                <p>효율은 <span>높게</span></p>
-                <p>순공시간은 <span>길게</span></p>
+                <p>계획은 <span>빠르게</span></p>
+                <p>수업 성적은 <span>높게</span></p>
+                <p>이어지는 성과는 <span>길게</span></p>
             </div>
+            <div class="phone3">
+                <video width="310" height="590" src="{% static 'myapp/video/matching.mp4' %}" muted autoplay loop></video>
+                <img src="{% static 'myapp/images/iPhone12_Shadow.png' %}" class="overlay-image1" alt="Overlay Image">
+            </div>
+            <label class="down_icon">
+                <img src="{% static 'myapp/images/down-arrow.png' %}" width="70" height="70">
+            </label>
+        </div>
+        <div class="introduce_ai_video">
+            <div class="ai_text">
+                <h1>Ai</h1>
+                <h2>나의 맞춤 동영상을</h2>
+                <h2>확인해 보세요.</h2>
+            </div>
+            <div class="ai_text2">
+                <h2>필터 기능으로</h2>
+                <h2>원하는 것만.</h2>
+            </div>
+            <img class="ai_img1" src="{% static 'myapp/images/filter.png' %}" width="300" height="300">
+            <img class="right_arrow" src="{% static 'myapp/images/right-drawn-arrow.png' %}" width="200" height="200">
             <div class="phone4">
-                <video src="" width="340" height="720" muted autoplay loop></video>
+                <video width="310" height="590" src="{% static 'myapp/video/video_ai.mp4' %}" muted autoplay loop></video>
+                <img src="{% static 'myapp/images/iPhone12_Shadow.png' %}" class="overlay-image1" alt="Overlay Image">
             </div>
         </div>
     </div>
 </body>
-</html>

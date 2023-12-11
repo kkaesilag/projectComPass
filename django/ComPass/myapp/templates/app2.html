@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/app.css' %}">
 </head>
 <body>
     <div class="container">
-        <header>
+     <header>
             <div class="logo"><a href="{% url 'main' %}">.com<span>pass</span></a></div>
             <ul class="nav">
-                <li><a href="">앱 소개</a></li>
+                <li><a href="{% url 'app' %}">앱 소개</a></li>
                 <li><a href="{% url 'help' %}">지원</a></li>
                 <li><a href="">About Us</a></li>
                 <li><button type="button" onclick="location.href='{% url 'login' %}'">로그인</button></li>
@@ -20,24 +21,23 @@
     </div>
     <div class="main">
         <div class="back_button">
-            <a href="{% url 'app' %}">←</a>
+            <a href="app.html">←</a>
         </div>
         <div class="introduce_planner">
             <div class="planner_text1">
                 <h1>매칭</h1>
-                <h2>여러 매칭의 조건을</h2>
+                <h2>최고의 스터디 메이트를</h2>
                 <h2>1분 만에</h2>
-                <h2>확인해보세요.</h2>
+                <h2>찾아보세요.</h2>
             </div>
             <div class="planner_text2">
                 <p>매칭 시간은 <span>단축</span></p>
-                <p>효율은 <span>높게</span></p>
-                <p>순공시간은 <span>길게</span></p>
+                <p>언제 어디서나 <span>가능</span></p>
             </div>
             <div class="phone4">
-                <video src="" width="340" height="720" muted autoplay loop></video>
+                <video width="310" height="590" src="{% static 'myapp/video/matching.mp4' %}" muted autoplay loop></video>
+                <img src="{% static 'myapp/images/iPhone12_Shadow.png' %}" class="overlay-image1" alt="Overlay Image">
             </div>
         </div>
     </div>
 </body>
-</html>

@@ -1,10 +1,10 @@
 @font-face {
     font-family: pretendard-Medium;
-    src: url(Pretendard-Medium.woff);
+    src: url(../font/Pretendard-Medium.woff);
 }
 @font-face {
     font-family: pretendard-Bold;
-    src: url(Pretendard-Bold.woff);
+    src: url(../font/Pretendard-Bold.woff);
 }
 /*애니메이션 부분*/
 @keyframes scroll_up {
@@ -99,16 +99,11 @@ header button:hover {
 }
 
 /*바디 부분*/
-
-body{
-    
-}
-
 .cover1 {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(test1.jpg);
+    background: url(../images/test1.jpg);
     background-size: cover;
 }
 
@@ -150,7 +145,7 @@ body{
 .cover2 {
     width: 100%;
     height: 80vh;
-    background-image: url(phone_touch.jpg);
+    background-image: url(../images/phone_touch.jpg);
     background-size: cover;
 }
 
