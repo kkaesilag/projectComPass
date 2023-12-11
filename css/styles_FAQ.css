@@ -24,31 +24,31 @@
   }
   
   .question p {
-    margin-left: 10px; /* ���� ������ ���� ���� �߰� */
-    display: inline; /* ������ �ζ��� ��ҷ� ���� */
+    margin-left: 10px; 
+    display: inline; 
   }
   
   .answer {
     padding: 10px;
     margin-top: 10px;
-    background-color: #fff; /* �亯 �ڽ��� ������ ������� ���� */
-    margin-left: 20px; /* �亯 ���� ���� �߰� */
+    background-color: #fff;
+    margin-left: 20px;
     display : none;
   }
   
-  /* Q.�� A.�� ���� ���� ��Ÿ�� */
+
   .question::before{
     content: 'Q. ';
-    color: #3498db; /* �Ķ������� ���� */
-    margin-right: 5px; /* A.�� �亯 ������ ���� ���� */
+    color: #3498db;
+    margin-right: 5px; 
     font-weight: bold;
     font-size: 1.3em
   }
   
   .answer::before {
     content: 'A. ';
-    color: #e74c3c; /* ���������� ���� */
-    margin-right: 5px; /* A.�� �亯 ������ ���� ���� */
+    color: #e74c3c; 
+    margin-right: 5px;
     font-weight: bold;
     font-size: 1.2em
   }
