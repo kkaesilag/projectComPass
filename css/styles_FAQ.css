@@ -1,4 +1,9 @@
 /* styles_FAQ.css ���Ͽ� �߰��Ǵ� ��Ÿ�ϵ� */
+.main {
+  padding-top: 80px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+}
 
 .faq-container {
     text-align: left;
