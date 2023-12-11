@@ -1,0 +1,187 @@
+@font-face {
+    font-family: pretendard-Medium;
+    src: url(Pretendard-Medium.woff);
+}
+@font-face {
+    font-family: pretendard-Bold;
+    src: url(Pretendard-Bold.woff);
+}
+/*애니메이션 부분*/
+@keyframes scroll_up {
+    from{
+        opacity: 0.2;
+        bottom: -200px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0px;
+    }
+
+}
+@keyframes fadein_up{
+    from {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes fadein{
+    from {
+        opacity: 0;     
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(30px);
+    }
+  }
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: pretendard-Medium;
+    color: white;
+}
+/*헤더 부분*/
+header{
+    width: 80%;
+    height: 80px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background: none;
+    border: 2px solid pink;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+header button:hover {
+    background: darkcyan;
+}
+
+
+.logo{
+    font-family: pretendard-medium;
+    font-size: 25px;
+}
+
+.logo span{
+    font-family: pretendard-bold;
+    font-size: 30px;
+}
+
+.nav li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.nav li a:hover{
+    color: darkcyan;
+}
+
+/*바디 부분*/
+
+body{
+    
+}
+
+.cover1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(test1.jpg);
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    height: 600px;
+}
+
+.text_container {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 2.8rem;
+}
+.right{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 320px;
+    left: 40px;
+}
+.right span {
+    font-size: 25px;
+    font-weight: 600;
+}
+.right img {
+    margin-right: 10px;
+}
+.down_icon {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+
+.cover2 {
+    width: 100%;
+    height: 80vh;
+    background-image: url(phone_touch.jpg);
+    background-size: cover;
+}
+
+.container1{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.text_container1 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 2.8rem;
+}
+/* footer 부분 */
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+}
+.row1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+.row2 {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 60%;
+    margin: auto;
+}
