@@ -461,9 +461,21 @@ header button:hover {
     position: absolute;
     top: 150px;
     right: 150px;
-    border: 10px solid gray;
     border-radius: 30px;
     animation: fadein_up 2.5s;
+}
+
+.phone4 video {
+    overflow: hidden;
+    border-radius: 41px;
+}
+
+.overlay-image1 {
+    position: absolute;
+    top: -15px;
+    left: -5px;
+    width: 320px; /* 부모 요소에 꽉 차도록 조정 */
+    height: 634px;
 }
 
 .planner_text2{
