@@ -234,7 +234,6 @@ header button:hover {
     width: 400px;
     height: 700px;
     position: absolute;
-    border: 10px solid gray;
     border-radius: 15px;
     right: 0px;
     top: 0px;
@@ -544,7 +543,7 @@ header button:hover {
     border-radius: 10px;
     background-color: white;
     position: relative;
-    font-size: 18px;
+    font-size: 20px;
 }
 .timeline li::before {
     content:""; position: absolute;
@@ -552,6 +551,10 @@ header button:hover {
     width: 20px; height: 20px; border-radius: 100%;
     background:#252525; border: 2px solid #ffffff;
     box-sizing: border-box
+}
+
+.timeline li h3 {
+    margin-bottom: 5px;
 }
 
 .history_about_wrap {
@@ -571,7 +574,7 @@ header button:hover {
 
 .vision {
     width: 100%;
-    height: 600px;
+    height: 800px;
     background-color: black;
     text-align: center;
 }
@@ -582,9 +585,10 @@ header button:hover {
     margin: 0px auto;
 }
 .vision h2 {
+
     color: white;
     font-size: 43px;
-    padding: 30px;
+    padding: 130px 60px 60px 60px;
 }
 
 .vision_box {
@@ -599,6 +603,7 @@ header button:hover {
     width: 350px;
     height: 400px;
     padding: 10px;
+    font-size: 1.3em;
 }
 
 .introduce_team {

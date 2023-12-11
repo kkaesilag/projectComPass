@@ -1,9 +1,78 @@
+
+@font-face {
+    font-family: pretendard-Medium;
+    src: url(../font/Pretendard-Medium.woff);
+}
+@font-face {
+    font-family: pretendard-Bold;
+    src: url(../font/Pretendard-Bold.woff);
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: pretendard-Medium;
+    color: black;
+}
+.container {
+    position: fixed; z-index: 999; left: 0; right: 0;
+    background-color: white;
+}
+header{
+    width: 80%;
+    height: 80px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background: none;
+    border: 2px solid pink;
+    color: darkred;
+    padding: 15px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+header button:hover {
+    background: darkcyan;
+}
+
+
+.logo{
+    font-family: pretendard-medium;
+    font-size: 25px;
+}
+
+.logo span{
+    font-family: pretendard-bold;
+    font-size: 30px;
+}
+
+.nav li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.nav li a:hover{
+    color: darkcyan;
+}
+
+
+/*main ë¶€ë¶„*/
+
 table {
     width: 50%;
     margin: 20px auto;
     border-collapse: collapse;
     margin-top: 20px;
     background-color: #ffffff;
+    border-radius: 20px;
 }
   
 td {
@@ -17,6 +86,10 @@ th {
     vertical-align: top;
 }
 
+.file_upload {
+    padding-top: 0px;
+}
+
 .tableCaption {
     text-align: center;
     color: #333;
@@ -26,7 +99,9 @@ th {
 
 form {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    height: 92vh;
 }
   
 label {
@@ -60,5 +135,5 @@ button:hover {
 #message,
 #attachment,
 #problemType {
-  width: 80%; /* ÀÔ·Â Ä­ ÆøÀ» 100%·Î ¼³Á¤ÇÏ¿© ¶È°°ÀÌ ¸ÂÃã */
+  width: 80%; /* ï¿½Ô·ï¿½ Ä­ ï¿½ï¿½ï¿½ï¿½ 100%ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½È°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 }
