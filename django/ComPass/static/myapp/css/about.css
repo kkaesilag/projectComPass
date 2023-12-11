@@ -17,8 +17,9 @@
 .history_bg h2{
     text-align: center;
     padding-top: 200px;
-    color: rgb(0, 0, 0);
-    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black;
+    font-size: 5rem;
 }
 
 .history_about{
