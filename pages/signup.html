@@ -16,8 +16,8 @@
                 <input type="email" id="newemail" name="newemail" placeholder="이메일" required>
                 <input type="password" id="newPassword" name="newPassword" placeholder="비밀번호" required>
                 <input type="password" id="rePassword" name="rePassword" placeholder="비밀번호 다시 입력" required>
-                <button type="button" onclick="signup()">계정 만들기</button>
-                <label><input type="checkbox" name="color" value="blue"> 저는 만 18세 이상입니다. (필수)</label>
+                <input type="submit" class="submit_button" onclick="signup()" value="회원가입">
+                <label><input type="checkbox" name="color" value="blue"> 개인정보 수집에 동의합니다. (필수)</label>
                 <label><input type="checkbox" name="color" value="blue"> <a href="">이용약관</a>을 읽고 동의 하였습니다. (필수)</label>
             </form>
             <p id="signup-error-message"></p>
